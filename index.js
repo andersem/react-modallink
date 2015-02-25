@@ -1,2 +1,2 @@
-exports.Modal = require('index/Modal');
-exports.ModalLink = require('index/ModalLink');
+exports.Modal = require('dist/Modal');
+exports.ModalLink = require('dist/ModalLink');
