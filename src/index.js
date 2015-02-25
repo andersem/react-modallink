@@ -1,2 +1,2 @@
-exports.Modal = require('./Modal.react');
-exports.ModalLink = require('./ModalLink.react');
+exports.Modal = require('./Modal.jsx');
+exports.ModalLink = require('./ModalLink.jsx');
