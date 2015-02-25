@@ -1,6 +1,6 @@
 {
   "name": "react-modallink",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Creates a modal and a link to open the modal",
   "main": "index.js",
   "scripts": {
