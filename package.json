@@ -2,7 +2,7 @@
   "name": "react-modallink",
   "version": "0.0.1",
   "description": "Creates a modal and a link to open the modal",
-  "main": "modules",
+  "main": "src/index.js",
   "scripts": {
     "test": "jsxhint src/**/* & jest"
   },
