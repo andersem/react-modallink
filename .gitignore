@@ -14,3 +14,4 @@ atlassian-ide-plugin.xml
 node_modules
 testresults/
 .sass-cache/
+dist
