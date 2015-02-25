@@ -1,0 +1,38 @@
+{
+  "name": "react-modallink",
+  "version": "0.0.0",
+  "description": "Creates a modal and a link to open the modal",
+  "main": "modules",
+  "scripts": {
+    "test": "jsxhint src/**/* & jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andersem/react-modallink"
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "react-modallink",
+    "popup"
+  ],
+  "author": "Anders Emil Salvesen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andersem/react-modallink/issues"
+  },
+  "devDependencies": {
+    "react": "~0.12.2",
+    "jest": "~0.1.37",
+    "react-tools": "~0.12.2",
+    "classnames": "~1.1.4",
+    "jsxhint": "~0.12.1"
+  },
+  "jest": {
+    "rootDir": "./src",
+    "scriptPreprocessor": "../preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "../node_modules/react"
+    ]
+  }
+}
