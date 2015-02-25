@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jsxhint src/**/* & jest",
-    "release": "rm -rf dist & jsx -x jsx src dist"
+    "release": "rm -rf dist & jsx -x jsx src dist & npm-release patch"
   },
   "repository": {
     "type": "git",
