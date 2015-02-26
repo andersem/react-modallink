@@ -1,6 +1,12 @@
 # react-modallink
 Creates a modal and a link to open the modal
 
+## Installation
+
+```bash
+npm install react-modallink --save
+```
+
 ## Usage
 
 ### Create a react-component that contains a Modal
@@ -97,3 +103,8 @@ var ComponentWithModalLink = React.createClass({
   border-bottom-left-radius: 4px;
 }
 ```
+
+
+## Inspiration
+
+Inspired by and modified from react-bootstrap and cupcake-react-modal.
