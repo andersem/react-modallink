@@ -4,7 +4,7 @@
   "description": "Creates a modal and a link to open the modal",
   "main": "index.js",
   "scripts": {
-    "test": "jsxhint src/**/* & jest",
+    "test": "jest",
     "release": "rm -rf dist & jsx -x jsx src dist & npm-release patch"
   },
   "repository": {
