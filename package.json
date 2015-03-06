@@ -23,12 +23,13 @@
     "url": "https://github.com/andersem/react-modallink/issues"
   },
   "devDependencies": {
-    "react": "~0.12.2",
-    "jest": "~0.1.37",
-    "react-tools": "~0.12.2",
     "classnames": "~1.1.4",
+    "jest": "~0.1.37",
+    "jest-cli": "^0.4.0",
     "jsxhint": "~0.12.1",
-    "npm-release": "0.0.4-3"
+    "npm-release": "0.0.4-3",
+    "react": "~0.12.2",
+    "react-tools": "~0.12.2"
   },
   "jest": {
     "rootDir": "./src",
