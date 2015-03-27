@@ -1,4 +1,6 @@
 # react-modallink
+
+[![Join the chat at https://gitter.im/andersem/react-modallink](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/andersem/react-modallink?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Creates a modal and a link to open the modal
 
 ## Installation
