@@ -21,18 +21,18 @@ module.exports = React.createClass({
       isModalShown: false
     });
   },
-
+  onTriggerClick: function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    this.show();
+  },
   render: function () {
     var triggerStyle = {
       cursor: 'pointer'
     };
-    var trigger = React.Children.only(this.props.children);
-    trigger.props.onClick = function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      this.show();
-    }.bind(this);
-    var modal = cloneWithProps(this.props.modal, {visible: this.state.isModalShown, onHide: this.hide});
+    var passedTrigger = React.Children.only(this.props.children);
+    var trigger = React.cloneElement(passedTrigger, {onClick: this.onTriggerClick});
+    var modal = React.cloneElement(this.props.modal, {visible: this.state.isModalShown, onHide: this.hide});
     return (
       <div>
         {modal}
