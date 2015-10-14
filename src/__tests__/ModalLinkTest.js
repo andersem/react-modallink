@@ -1,11 +1,12 @@
-jest.dontMock('../ModalLink.jsx');
-jest.dontMock('../Modal.jsx');
+jest.dontMock('../ModalLink');
+jest.dontMock('../Modal');
+jest.dontMock('react-addons-test-utils');
 
 describe('ModalLink', function () {
-  var React = require('react/addons');
-  var ModalLink = require('../ModalLink.jsx');
-  var Modal = require('../Modal.jsx');
-  var TestUtils = React.addons.TestUtils;
+  var React = require('react');
+  var ModalLink = require('../ModalLink');
+  var Modal = require('../Modal');
+  var TestUtils = require('react-addons-test-utils');
 
   var MyModal = React.createClass({
     render: function () {
@@ -32,7 +33,7 @@ describe('ModalLink', function () {
 
   it('should add onHide-prop to the modal', function () {
     var renderedModalLink = TestUtils.renderIntoDocument(modalLink);
-    var renderedModal = TestUtils.findRenderedComponentWithType(renderedModalLink, <MyModal />);
+    var renderedModal = TestUtils.findRenderedComponentWithType(renderedModalLink, MyModal);
     expect(renderedModal.props.onHide).toBeDefined();
   });
 });

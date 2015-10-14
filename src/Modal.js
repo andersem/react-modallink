@@ -75,7 +75,7 @@ module.exports = React.createClass({
   },
 
   handleOverlayClick: function (e) {
-    if (e.target === this.refs.overlay.getDOMNode()) {
+    if (e.target === this.refs.overlay) {
       e.preventDefault();
       e.stopPropagation();
       this.hide();

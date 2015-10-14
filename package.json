@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "release": "rm -rf dist & jsx -x jsx src dist & npm-release patch"
+    "release": "rm -rf dist & babel src --out-dir dist & npm-release patch",
+    "build": "rm -rf dist & babel src --out-dir dist",
+    "releaseWithPostfix": "npm-release prerelease"
   },
   "repository": {
     "type": "git",
@@ -22,14 +24,16 @@
   "bugs": {
     "url": "https://github.com/andersem/react-modallink/issues"
   },
+  "dependencies": {
+    "classnames": "^2.1.5",
+    "react": "^0.14.0"
+  },
   "devDependencies": {
-    "classnames": "~1.1.4",
-    "jest": "~0.1.37",
-    "jest-cli": "^0.4.0",
-    "jsxhint": "~0.12.1",
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "jest-cli": "^0.5.10",
     "npm-release": "0.0.4-3",
-    "react": "~0.12.2",
-    "react-tools": "~0.12.2"
+    "react-addons-test-utils": "^0.14.0"
   },
   "jest": {
     "rootDir": "./src",

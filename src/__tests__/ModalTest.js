@@ -1,10 +1,11 @@
-jest.dontMock('../Modal.jsx');
+jest.dontMock('../Modal');
 jest.dontMock('classnames');
+jest.dontMock('react-addons-test-utils');
 
 describe('Modal', function() {
-  var React = require('react/addons');
-  var Modal = require('../Modal.jsx');
-  var TestUtils = React.addons.TestUtils;
+  var React = require('react');
+  var Modal = require('../Modal');
+  var TestUtils = require('react-addons-test-utils');
 
   it('should have hidden as class when passed prop visible=false', function() {
     var modal = TestUtils.renderIntoDocument(<Modal visible={false} />);
@@ -20,7 +21,7 @@ describe('Modal', function() {
 
   it('should close when overlay is clicked', function() {
     var modal = TestUtils.renderIntoDocument(<Modal visible={true} />);
-    var overlay = modal.refs.overlay.getDOMNode();
+    var overlay = modal.refs.overlay;
     TestUtils.Simulate.click(overlay);
     var withClassHidden = TestUtils.scryRenderedDOMComponentsWithClass(modal, "hidden");
     expect(withClassHidden.length).toBe(1);
@@ -28,7 +29,7 @@ describe('Modal', function() {
 
   it('should not open when overlay is clicked after being hidden', function() {
     var modal = TestUtils.renderIntoDocument(<Modal visible={true} />);
-    var overlay = modal.refs.overlay.getDOMNode();
+    var overlay = modal.refs.overlay;
     TestUtils.Simulate.click(overlay);
     var withClassHidden = TestUtils.scryRenderedDOMComponentsWithClass(modal, "hidden");
     expect(withClassHidden.length).toBe(1);
