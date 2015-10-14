@@ -1,7 +1,6 @@
 'use strict';
 
-var React = require('react/addons');
-var cloneWithProps = React.addons.cloneWithProps;
+var React = require('react');
 
 module.exports = React.createClass({
   getInitialState: function () {
