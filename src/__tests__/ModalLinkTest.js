@@ -31,9 +31,9 @@ describe('ModalLink', function () {
     expect(renderedTrigger.props.onClick).toBeDefined();
   });
 
-//  it('should add onHide-prop to the modal', function () {
-//    var renderedModalLink = TestUtils.renderIntoDocument(modalLink);
-//    var renderedModal = TestUtils.findRenderedComponentWithType(renderedModalLink, <MyModal />);
-//    expect(renderedModal.props.onHide).toBeDefined();
-//  });
+  it('should add onHide-prop to the modal', function () {
+    var renderedModalLink = TestUtils.renderIntoDocument(modalLink);
+    var renderedModal = TestUtils.findRenderedComponentWithType(renderedModalLink, MyModal);
+    expect(renderedModal.props.onHide).toBeDefined();
+  });
 });
